@@ -9,9 +9,9 @@ public class Program {
 		List list = new List();
 		
 		System.out.println(list.isEmpty());
-		System.out.println(list.count());
+		System.out.println(list.length());
 		list.insert(0);
-		System.out.println(list.count());
+		System.out.println(list.length());
 		list.print();
 		
 		for (int i = 0; i<6; i++) {
@@ -20,11 +20,19 @@ public class Program {
 		list.print();
 		
 		System.out.println(list.find(0));
-		System.out.println(list.count());
+		System.out.println(list.length());
 		System.out.println(list.remove(3));
-		System.out.println(list.count());
+		System.out.println(list.length());
+		
+		//list.print();
+		//System.out.println(list.remove(18));
+		list.append(55);
 		list.print();
-		System.out.println(list.remove(18));
+		System.out.println("Chegou aqui");
+		list.insertInto(24, 4);
+		list.print();
+		System.out.println(list.count(0));
+		
 	}
 
 }
